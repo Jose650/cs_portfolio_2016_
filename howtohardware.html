@@ -35,21 +35,19 @@ table, tr, td {
         <li><a href="Bigproject.html"> Big project </a></li>
     </ul>
  </div>
- <h1>How To</h1>
+ <h1>How To Page</h1>
  
  <table>
      <tr>
          <td>
              <h3>
-                 How to code a navbar
+                 How to create a todo list
              </h3>
          </td>
          <td>
             <div>
-                <ul id="navbar">
-                    <li><a href="index.html"> About Me </a></li>
-                    <li><a href="hardware.html"> Hardware </a></li>
-                    <li><a href="howtohardware.html"> How to</a></li>
+                
+                  
                 </ul>
             </div>
         </td>
@@ -58,26 +56,29 @@ table, tr, td {
          <td>
              <pre>
                  <code>
-&lt;div&gt;
-     &lt;ul id=&quot;navbar&quot;&gt;
-        &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt; About Me &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;hardware.html&quot;&gt; Hardware &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;howtohardware.html&quot;&gt; How to&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;calc.html&quot;&gt; Calculator &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;todo.html&quot;&gt; Todo List &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;vind.html&quot;&gt; Vindinium&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;Bigproject.html&quot;&gt; Big project &lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
- &lt;/div&gt; 
+<input id="textinput" type="text" ><br>
+  
+  <input id="buttoninput" type="button" value="Submit">
+   <input id="button2input" type="button" value="Reset">
+ 
+ <select id="selectinput">
+        
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Yellow">Yellow</option>
+        
+     </select>
+ 
+      <h3> Tasks</h3>
+    <div id="display">
+      </div>
                  </code>
              </pre>
          </td>
          <td>
              <h4>
-              I created a navbar which links all pages together on one page in order to organize everything<br>
-              at once also took make it look nice.When you add a navbar to the webpage it needs to be inside<br>
-              your body tags. A div with the id of "top of the page" is added to movea the navbar on top on<br>
-              the page. 
+              I decided to create an Todo list for my How To Page because I thought it was be nice to make a list of things 
+              I need to do in order to be organized. The Todo list is a list of tasks that are needed to be completed that are organized in particular order of priority.
              </h4>
          </td>
      </tr>
@@ -85,30 +86,154 @@ table, tr, td {
          <td>
              <pre>
                  <code>
-#navbar {
-    text-align: center;
-}
+<img src="http://www.ceintec.com/curso_de_javascript_y_html_presencial_en_bilbao_bilbo_vizcaya_bizkaia_3969895.jpg"
+     width="300px" height="170px">          
+            </code>
+             </pre>
+         </td>
+         <td>
+             <h4>
+                 To create the Todo List you'll need to use HTML and Javascript. 
+                 You use the HTML in order to create the actual code of the Todo List itself and the Javascript is used to program the buttons what to do itself.<br>
+                 
+         </h4>
+            <tr>
+         <td>
+             <pre>
+                 <code> 
+  &lt;input id="textinput" type="text" &gt;&lt;br&gt;<br />
+  <br /> <input id="textinput" type="text" ><br>
+ 
+ 
+  &lt;input id="buttoninput" type="button" value="Submit"&gt;<br />
+  <input id="buttoninput" type="button" value="Submit">
+ 
+ 
+  &lt;input id="button2input" type="button" value="Reset"&gt;<br />
+ <br /> <input id="button2input" type="button" value="Reset">
 
-#navbar li {
-    display: inline-block;
-    border: 3px soid black;
-    padding: 10px;
-    background-color: black;
-}
 
-#navbar a  {
-    color: white;
-    background-color: black;
-}
+&lt;select id="selectinput"&gt;
+ <select id="selectinput">
+           
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Yellow">Yellow</option>
+        
+     </select>
+ 
+  
+ 
+        
+   </code>
+             </pre>
+         </td>
+         <td>
+             <h4> The input id's creates a text input box on the screen displaying the text provided. You need to make box  for the things you are listing which is the "textinput"
+            this will display inside the first box. the code type="text" will let the html know its a text.  </h4>
+             
+             <h4> The next step is to create the buttons for the inputs for the submit and reset. The Submit button will run the textinput so it can create the first listed item part of the todo list. The code to make the button is  id="buttoninput" type="button" value="Submit">
+  </h4>
+             
+          <h4> The thrid step is to make the another button for the reset. The reason for making the reset button is if clear off the mistakes someone could make while creating the todo list. Now in we will be using the same input id code as the Submit button used but instead call it  id="button2input" because this is the 2nd button input but the value would be differnet since its not a submit button its a reset so the code format would be  type="button" value="Reset"</h4>
+             
+             <h4> Now the final step for our buttons is the select button which changes the colors of the todo list text. The code for the select input is </h4>
+          <code> 
+        &lt;select id="selectinput"&gt;<br />
+        <br />
+        &lt;option value="Red"&gt;Red&lt;/option&gt;<br />
+        &lt;option value="Blue"&gt;Blue&lt;/option&gt;<br />
+        &lt;option value="Yellow"&gt;Yellow&lt;/option&gt;
+        
+        <h4> You could can change the color to any choice you desire as along you use  the option value code </h4>
+     </select>
+     </code>
+   
+ <tr>
+         <td>
+             <pre>
+                 <code>
+  &lt;h3&gt; Tasks&lt;/h3&gt;<br />
+     <h3> Tasks</h3>
+    &lt;div id="display"&gt;<br />    &lt;/div&gt;
+  
+  
+    YOUR LIST WILL BE DISPLAYED AT THE BOTTOM OF THE TITLE OF TASKS
+      
                  </code>
              </pre>
          </td>
          <td>
              <h4>
-                 In the CSS tags I added a code in order to style the navbar. 
-                 I had created the id of "top of the page" to put the navbar on the top of my webpage however it helps centering it in place. I used a narbar to also style the look of the narbar  such as the border around it, the color, and the color of the words also to pad it to change the size<br>
-                 
+          Finally for the todo list you'll need to organize it all together. You'll want a header so we can see the title of our todo list. Then fianlly  we use a div id display tag so we can see where the listed items are going to appear.
              </h4>
+            
+        <tr>
+         <td>
+             <h3>
+                 Javascript for the Todo List
+             </h3>
+         </td>
+         <td>
+            <div>
+                
+                  
+                </ul>
+            </div>
+        </td>
+    </tr>
+       
+       <tr>
+         <td>
+             <pre>
+                 <code>
+
+    var textinput = document.getElementById("textinput");
+var buttoninput = document.getElementById("buttoninput");
+var button2input = document.getElementById("button2input");
+var display = document.getElementById("display");
+var selectinput = document.getElementById("selectinput");
+      
+                 </code>
+             </pre>
+         </td>
+         <td>
+             <h4>
+       First we need to add getElementById to each input we created for the todo list. This tells the variable  to point at the HTML element
+             </h4>
+         </td>
+     </tr>
+      <tr>
+         <td>
+             <pre>
+                 <code>
+
+   buttoninput.addEventListener("click", function() {
+        
+        
+        var text =textinput.value
+        var select = selectinput.value
+        
+        display.innerHTML += "<div style='color:"+select+"'>"+text+"</div>"; 
+});
+
+
+button2input.addEventListener("click", function() {
+        
+        display.innerHTML = ""
+        
+});display.addEventListener("click", function(evt) {
+    evt.target.parentNode.removeChild(evt.target);
+      
+                 </code>
+             </pre>
+         </td>
+         <td>
+             <h4>
+    For each of the both button inputs we need to add an event listener so the input can run though when you click each button input. The var text and select is there so it can assign the value  you typed in the box to declare it. Finally the last part of the todo list is the removal of the listed things you have completed in the todo list so it can make it much more easier. We add the evt.target.parentNode.removeChild(evt.target); so it can remove the thing you listed while not reseting the wholw todo list itself. And that how you make a todo list.
+         </td>
+     </tr>
+       
          </td>
      </tr>
  </table>

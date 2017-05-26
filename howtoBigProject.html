@@ -1,0 +1,128 @@
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+#navbar {
+    text-align: center;
+}
+
+#navbar li {
+    display: inline-block;
+    border: 3px soid black;
+    padding: 10px;
+    background-color: black;
+}
+#navbar a  {
+    color: white;
+    background-color: black;
+}
+table, tr, td {
+    border:2px groove black;
+}
+    </style>
+</head>
+<body>
+    <div>
+     <ul id="navbar">
+        <li><a href="index.html"> About Me </a></li>
+        <li><a href="hardware.html"> Hardware </a></li>
+        <li><a href="howtohardware.html"> How to</li>
+        <li><a href="calc.html"> Calculator </a></li>
+        <li><a href="todo.html"> Todo List </a></li>
+        <li><a href="vind.html"> Vindinium</a></li>
+        <li><a href="Bigproject.html"> Big project </a></li>
+        <li><a href="howtoBigProject.html"> How to Big Project</a></li>
+    </ul>
+ </div>
+ <h1>How To Page for Big Project</h1>
+ 
+ <table>
+     <tr>
+         <td>
+             <h3>
+                 How to make an drop down image 
+             </h3>
+         </td>
+         <td>
+            <div>
+                
+                  
+                </ul>
+            </div>
+        </td>
+    </tr>
+     <tr>
+         <td>
+             <pre>
+                 <code>
+<img  src="http://vignette1.wikia.nocookie.net/warner-bros-characters/images/4/46/Deadshot.png/revision/latest?cb=20140821184138"
+         width="300px" height="250px">
+                 </code>
+             </pre>
+         </td>
+         <td>
+             <h4>
+              To make a Image drop down you'll need to find a image that you would like to use to make it drop down text when you click on it. I decided to make this because I felt it wasn't too diffcult or easy to do. For example, I will use  a picture of Deadshot from the Justice League Tv Show. 
+             </h4>
+         </td>
+     </tr>
+     <tr>
+         <td>
+             <pre>
+                 <code>
+&lt;img id=&quot;Deadshotpic&quot; src=&quot;http://vignette1.wikia.nocookie.net/warner-bros-characters/images/4/46/Deadshot.png/revision/latest?cb=20140821184138&quot;
+         width=&quot;300px&quot; height=&quot;250px&quot;&gt;
+         &lt;div style=&quot;display:none&quot; id=&quot;Deadshotinfo&quot;&gt;       
+          
+           </code>
+            
+             </pre>
+         </td>
+         <td>
+             <h4>
+                Now you'll have to add Id, div style tag so it can display the text inside the image source tag. Make sure that the div style tag closes at the end of the Paragraph tag. In the Id part of the tag make sure you name the image with pic next to it with quotations in the beginning and end. For the div style tag makes sure you put display:none with quotations and out the id tag again at the end like with the first one but make sure u put info instead of pic because it you want to show the paragraph you wrote about the image you are showing and close it with out the source image code.  <br>
+                 
+         </h4>
+            <tr>
+         <td>
+             <pre>
+                 <code> 
+ var Deadshotpic = document.getElementById(&quot;Deadshotpic&quot;);
+var Deadshotinfo = document.getElementById(&quot;Deadshotinfo&quot;);
+  
+  
+  Deadshotpic.addEventListener(&apos;click&apos;,function(){
+ 
+        
+        
+        if(Deadshotinfo.style.display ===&quot;none&quot;){
+        Deadshotinfo.style.display = &quot;block&quot;;
+    }
+    else {
+        Deadshotinfo.style.display = &quot;none&quot;;
+    }
+});
+
+   </code>
+             </pre>
+         </td>
+         <td>
+             <h4>  You need to put var and getElementById tag inside the Javascript file. Which  you'll have to link a javasrcipt file to the image which has html file in already.  </h4>
+             
+             <h4> You'll need to make two of the var and getElementById tags one for your images name with pic in it and info in it was well so it can read it from the html file.
+  </h4>
+             
+          <h4> Next you'll have to make a click function so when you hover over the image and click it it will be clickable. it need to have addEventListener so it know when your clicking. </h4>
+             
+             <h4> For the final part you'll need to create a if else statement so it can display the paragraph with the div style tags </h4>
+          <code> 
+      
+        <h4> Nice you have completed all the steps now if you hover the image and click it the text of the image you wrote about should drop down and if you click it again the text should go back up now and not be seen until you click it again. Congratulations you have made a drop down image for an example of multiple drop down images please go to my BigProject page so you can see my images.Thank you</h4>
+     </select>
+     </code>
+   
+ 
+ </table>
+</body>
+</html>
